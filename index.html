@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="src/css/main.css">
+        <link rel="stylesheet" href="src/css/reset.css">
+        <title>Clima</title>
+    </head>
+    <body>
+        <div id="conteiner" class="conteiner">
+
+            <form id="pesquisar" class="pesquisar">
+                <i class="fa-solid fa-location-dot"></i>
+                <input 
+                    type="search" 
+                    name="nome_cidade" 
+                    id="nome_cidade"
+                    placeholder="Buscar Cidade">
+
+                    <button type="submit" class="btn_pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+            </form>
+         
+            
+
+            <div id="clima" class="clima">
+                <h1 id="titulo" class="titulo">Cidade, País</h1>
+                <div id="info">
+                    <div id="tempo" class="tempo">
+                        <img class="img_temp" src="https://openweathermap.org/img/wn/04d@2x.png" alt="">
+                        <div>
+                            <p id="temperatura" class="temperatura">
+                                100,0 <sup>Cº</sup>
+                            </p>
+                            <p id="descricao" class="descricao">
+                                Pegando fogo
+                            </p>
+                        </div>
+                    </div>   
+
+                    <div id="outrasinfo" class="outrasinfo">
+                        <div class="info">
+                            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                            <div class="temp_max">
+                                <h2>Temp. Máxima</h2>
+                            <p id="temp_max">
+                                100,0 <sup>Cº</sup> 
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                            <div class="temp_min">
+                                <h2>Temp. Mínima</h2>
+                            <p id="temp_min">
+                                100,0 <sup>Cº</sup> 
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <i id="umidade_icon" class="fa-solid fa-droplet"></i>
+                            <div class="umidade">
+                                <h2>Umidade</h2>
+                            <p id="umidade">
+                                100%
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <i id="vento_icon" class="fa-solid fa-wind"></i>
+                            <div class="vento">
+                                <h2>Vento</h2>
+                            <p id="vento">
+                                100,0 Km/h
+                            </p>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+
+            <div id="alerta">
+
+            </div>
+        </div> 
+        <script src="src/js/script.js"></script>
+    </body>
+    
+</html>
